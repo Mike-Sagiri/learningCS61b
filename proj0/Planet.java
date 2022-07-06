@@ -100,4 +100,11 @@ public class Planet {
         xxPos+=xxVel*dt;
         yyPos+=yyVel*dt;
     }
+
+    /** Draw itself
+     */
+    public void draw(){
+        String file = "./images/"+imgFileName;
+        StdDraw.picture(xxPos,yyPos,file);
+    }
 }
